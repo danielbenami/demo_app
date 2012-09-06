@@ -2,12 +2,9 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    #User = User Model Class
+    #all = method that gets all rows and columns from the User table
     @users = User.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
-    end
   end
 
   # GET /users/1
